@@ -4,10 +4,11 @@
 function generatePassword() {
 
   prompt("How many characters?");
-  prompt("Would you like uppercase characters?");
-  prompt("Would you like lowercase characters?");
-  prompt("Would you like numeric characters?");
-  prompt("Would you like special characters?");
+  prompt("Would you like uppercase characters? y/n");
+  prompt("Would you like lowercase characters? y/n");
+  prompt("Would you like numeric characters? y/n");
+  prompt("Would you like special characters? y/n");
+  
 };
 
 // generatePassword();
