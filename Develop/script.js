@@ -19,22 +19,23 @@ function generatePassword() {
   var validCharacters = [];
 
   if (uppercaseInput) {
-    validCharacters.concat(uppercase);
+    validCharacters.push(...uppercase);
   }
   if (lowercaseInput) {
-    validCharacters.concat(lowercase);
+    validCharacters.push(...lowercase);
   }
   if (numericInput) {
-    validCharacters.concat(numeric);
+    validCharacters.push(...numeric);
   }
   if (specialCharacterInput) {
-    validCharacters.concat(specialCharacters);
+    validCharacters.push(...specialCharacters);
   }
+  console.log(validCharacters);
 
-  for (var i = 0; i < passwordLen; i++) {
-    var randomCharacter = Math.floor(Math.random() * .length);
+  // for (var i = 0; i < passwordLen; i++) {
+  //   var randomCharacter = Math.floor(Math.random() * .length);
     
-  }
+  // }
 };
 
 // Get references to the #generate element
